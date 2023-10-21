@@ -572,20 +572,6 @@
                 "blur(0px)").text("SELESAI").css("z-index", "-2");
         });
 
-        function init() {
-            startTime();
-            stopOpening();
-            if (localStorage.getItem("nama") != null && localStorage.getItem("checked") == "Yoi") {
-                namaku = localStorage.getItem("nama");
-                myclock();
-            } else if (localStorage.getItem("nama") != null) {
-                mystart();
-            }
-            if (localStorage.getItem("blur") == "true") {
-                wpblur();
-            }
-
-        }
         $("img").on("dragstart", function (event) {
             event.preventDefault();
         });
