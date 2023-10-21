@@ -571,11 +571,11 @@
             $(".preload").css("background", "#00000000").css("color", "#FFFFFF00").css("backdrop-filter",
                 "blur(0px)").text("SELESAI").css("z-index", "-2");
         });
-	function init() {
+	ffunction init() {
             startTime();
             stopOpening();
             add =
-                "<a href='https://github.com/TheRazaq/test' target='_blank'><div class='cc'>Made with 😏</div></a>";
+                "<a href='https://github.com/TheRazaq/i-love-you' target='_blank'><div class='cc'>Made with 😏</div></a>";
             $("body").append(add);
             if (localStorage.getItem("nama") != null && localStorage.getItem("checked") == "Yoi") {
                 namaku = localStorage.getItem("nama");
@@ -875,16 +875,6 @@
                 mywrite();
             }
         });
-
-        function myclock() {
-            $("#spannama3").text(localStorage.getItem("nama"));
-            localStorage.setItem("checked", "Yoi");
-            $("#myform").hide();
-            $("#mywindow").hide();
-            $("#myVideo").hide();
-            $(".myclock").show();
-        }
-        jalan = false;
 
         function startTime() {
             var today = new Date();
